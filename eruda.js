@@ -27,6 +27,4 @@
     script.onload = function () {
         eruda.init();
     }
-
-    alert('eruda loaded');
 })();
