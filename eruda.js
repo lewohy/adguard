@@ -20,11 +20,13 @@
 // @grant           GM_registerMenuCommand
 // @run-at document-start
 // ==/UserScript==
-(function () {
+(() => {
     var script = document.createElement('script');
-    script.src="https://cdn.jsdelivr.net/npm/eruda";
-    document.body.append(script);
+    script.src = 'https://cdn.jsdelivr.net/npm/eruda';
+    document.documentElement.append(script);
     script.onload = function () {
         eruda.init();
     }
+
+    alert('eruda loaded');
 })();
